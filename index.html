@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Solar: Ayudando a la Comunidad</title>
+    <!-- Tailwind CSS para diseño rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes de Google para el estilo "hecho a mano" -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        /* Estilos personalizados para el efecto acuarela */
+        body {
+            background-color: #fdfbf7;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(200, 230, 201, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(165, 214, 167, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(255, 248, 225, 0.6) 0%, transparent 60%);
+            font-family: 'Lato', sans-serif;
+            color: #2c3e50;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Caveat', cursive;
+        }
+
+        .handwritten {
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        /* Efecto de borde irregular tipo papel/acuarela */
+        .watercolor-box {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 2% 5% 2% 5% / 5% 2% 5% 2%;
+            box-shadow: 5px 5px 15px rgba(27, 94, 32, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .watercolor-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilo para los iconos simulando dibujo */
+        .doodle-icon {
+            filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.1));
+            color: #558b2f;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Contenedor Principal (El "Poster") -->
+    <main class="w-full max-w-3xl bg-white/60 backdrop-blur-sm p-8 rounded-xl shadow-xl border-4 border-green-50/50 relative overflow-hidden">
+        
+        <!-- Decoración de fondo (manchas acuarela) -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-yellow-50 rounded-full mix-blend-multiply filter blur-3xl opacity-60 translate-y-1/2 -translate-x-1/2"></div>
+
+        <!-- Encabezado -->
+        <header class="text-center mb-12 relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-green-900 mb-4 drop-shadow-sm">
+                Energía Solar: <br>
+                <span class="text-green-700">Ayudando a la Comunidad</span>
+            </h1>
+            <div class="w-32 h-1 bg-green-300 mx-auto rounded-full mb-4"></div>
+            <h2 class="text-2xl md:text-3xl text-gray-700 handwritten">
+                Paneles solares para reducir el costo de los insumos básicos
+            </h2>
+        </header>
+
+        <!-- Contenido Central: Grilla de Beneficios -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 relative z-10">
+            
+            <!-- Tarjeta 1: Energía -->
+            <div class="watercolor-box p-6 flex flex-col items-center text-center">
+                <div class="bg-yellow-100 p-4 rounded-full mb-4 rotate-2">
+                    <i data-lucide="sun" class="w-12 h-12 doodle-icon text-yellow-600"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-green-800 mb-2">Energía Limpia</h3>
+                <p class="handwritten text-lg text-gray-600">
+                    Aprovechamos el sol para generar electricidad gratuita y sostenible.
+                </p>
+            </div>
+
+            <!-- Tarjeta 2: Ahorro -->
+            <div class="watercolor-box p-6 flex flex-col items-center text-center">
+                <div class="bg-blue-50 p-4 rounded-full mb-4 -rotate-1">
+                    <i data-lucide="piggy-bank" class="w-12 h-12 doodle-icon text-blue-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-green-800 mb-2">Ahorro Económico</h3>
+                <p class="handwritten text-lg text-gray-600">
+                    Reducimos drásticamente las cuentas de luz e insumos básicos.
+                </p>
+            </div>
+
+            <!-- Tarjeta 3: Comunidad -->
+            <div class="watercolor-box p-6 flex flex-col items-center text-center">
+                <div class="bg-green-50 p-4 rounded-full mb-4 rotate-1">
+                    <i data-lucide="users" class="w-12 h-12 doodle-icon text-green-600"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-green-800 mb-2">Beneficio Común</h3>
+                <p class="handwritten text-lg text-gray-600">
+                    Un proyecto que une y beneficia a todos los vecinos.
+                </p>
+            </div>
+
+            <!-- Tarjeta 4: Sustentabilidad -->
+            <div class="watercolor-box p-6 flex flex-col items-center text-center">
+                <div class="bg-teal-50 p-4 rounded-full mb-4 -rotate-2">
+                    <i data-lucide="leaf" class="w-12 h-12 doodle-icon text-teal-600"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-green-800 mb-2">Futuro Verde</h3>
+                <p class="handwritten text-lg text-gray-600">
+                    Cuidamos el planeta mientras mejoramos nuestra calidad de vida.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pie de página: Integrantes (A la izquierda y en negro) -->
+        <footer class="mt-8 border-t-2 border-dashed border-green-200 pt-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end">
+                
+                <!-- Sección de Integrantes -->
+                <div class="text-left w-full">
+                    <h3 class="text-2xl font-bold text-black mb-3 border-b-2 border-green-200 inline-block pb-1">
+                        Nombre Agrupación: <span class="text-green-800">Comunidad Verde</span>
+                    </h3>
+                    <ul class="text-lg text-black font-semibold space-y-1 handwritten pl-2">
+                        <li class="flex items-center">
+                            <i data-lucide="flower-2" class="w-4 h-4 mr-2 text-green-600"></i>
+                            Camila Carrasco
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="flower-2" class="w-4 h-4 mr-2 text-green-600"></i>
+                            Cecilia Moya
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="flower-2" class="w-4 h-4 mr-2 text-green-600"></i>
+                            Patricia Pacheco
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="flower-2" class="w-4 h-4 mr-2 text-green-600"></i>
+                            Margarita Zamorano
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pequeño sello visual a la derecha -->
+                <div class="hidden md:block opacity-80 mt-4 md:mt-0">
+                    <div class="w-24 h-24 border-4 border-green-800 rounded-full flex items-center justify-center rotate-12 bg-white shadow-lg">
+                        <span class="text-green-800 font-bold text-center leading-none transform -rotate-12">
+                            100%<br>Energía<br>Solar
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Script para renderizar los iconos -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
